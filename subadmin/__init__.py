@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 from collections import OrderedDict
 from functools import partial, update_wrapper
+from urllib.parse import parse_qsl, urlparse, urlunparse
 
 from django.conf.urls import url, include
 from django.contrib.admin.options import IS_POPUP_VAR, TO_FIELD_VAR
@@ -21,7 +22,6 @@ from django.utils.encoding import force_text
 from django.utils.functional import cached_property
 from django.utils.html import format_html
 from django.utils.http import urlencode, urlquote
-from django.utils.six.moves.urllib.parse import parse_qsl, urlparse, urlunparse
 from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import csrf_protect
 
